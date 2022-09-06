@@ -43,4 +43,16 @@ public class Student {
     public int hashCode() {
         return Objects.hash(username);
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "username='" + username + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", eligibleForErasmusScholarship=" + eligibleForErasmusScholarship +
+                ", universities=" + universities +
+                '}';
+    }
 }
