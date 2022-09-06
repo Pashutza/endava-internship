@@ -12,6 +12,21 @@ public class Student {
     private boolean eligibleForErasmusScholarship;
     private List<University> universities = new ArrayList<>();
 
+
+
+    public Student(String username, String firstName, String lastName, int age, boolean eligibleForErasmusScholarship, List<University> universities) {
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.eligibleForErasmusScholarship = eligibleForErasmusScholarship;
+        this.universities = universities;
+    }
+
+    public void setUniversities(List<University> universities) {
+        this.universities = universities;
+    }
+
     public List<University> getUniversities() {
         return universities;
     }
